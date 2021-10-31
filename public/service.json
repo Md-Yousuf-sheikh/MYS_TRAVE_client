@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "name": "Cox’s Bazar",
+        "price": "180",
+        "img": "https://www.daily-sun.com/assets/news_images/2018/01/30/13.jpg",
+        "detlils": "Cox’s Bazar is a town on the southeast coast of Bangladesh. It’s known for its very long, sandy beachfront, stretching from Sea Beach in the north to Kolatoli Beach in the south. Aggameda Khyang monastery is home to bronze statues and centuries-old Buddhist manuscripts. South of town, the tropical rainforest of Himchari National Park has waterfalls and many birds. North, sea turtles breed on nearby Sonadia Island"
+    },
+    {
+        "id": "2",
+        "name": "The Burj Khalifa",
+        "price": "500",
+        "img": "https://www.izkiz.net/wp-content/uploads/2017/01/DSC_7356.jpg",
+        "detlils": "The Burj Khalifa, known as the Burj Dubai prior to its inauguration in 2010, is a skyscraper in Dubai, United Arab Emirates. 1 Sheikh Mohammed bin Rashid Blvd - Downtown Dubai - Dubai - United Arab Emirates"
+    },
+    {
+        "id": "3",
+        "name": "Dal Lake",
+        "price": "450",
+        "img": "https://www.makemytrip.com/travel-guide/media/dg_image/srinagar/Dal-Lake.jpg",
+        "detlils": "Dal is a lake in Srinagar, the summer capital of Jammu and Kashmir, India. It is an urban lake, which is the second largest in the union territory of Jammu and Kashmir. It is integral to tourism and recreation in Kashmir and is named the Lake of Flowers, Jewel in the crown of Kashmir or Srinagar's Jewel"
+    },
+    {
+        "id": "4",
+        "name": "Aravalli Range",
+        "price": "350",
+        "img": "https://images.newindianexpress.com/uploads/user/imagelibrary/2019/2/12/w900X450/Haryana.jpg",
+        "detlils": "The Aravalli Range is a mountain range in Northern-Western India, running approximately 670 km in a south-west direction, starting near Delhi, passing through southern Haryana and Rajasthan, and ending in Gujarat. The highest peak is Guru Shikhar at 1,722 metres."
+    },
+    {
+        "id": "5",
+        "name": "Sydney Opera House",
+        "price": "500",
+        "img": "https://www.pv-magazine.com/wp-content/uploads/2019/06/opera-1200x675.jpg",
+        "detlils": "The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the banks of the Sydney Harbour, it is often regarded as one of the 20th century's most famous and distinctive buildings."
+    },
+    {
+        "id": "6",
+        "name": "City Palace, Jaipur",
+        "price": "350",
+        "img": "https://www.kabiratours.com/wp-content/uploads/2012/11/city-palace-jaipur.jpg",
+        "detlils": "The City Palace, Jaipur was established at the same time as the city of Jaipur, by Maharaja Sawai Jai Singh II, who moved his court to Jaipur from Amber, in 1727"
+    }
+]
