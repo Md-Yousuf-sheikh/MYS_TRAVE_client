@@ -12,6 +12,7 @@ import EventAdd from './component/EventAdd/EventAdd';
 import ManageEvent from './component/ManageEvent/ManageEvent';
 import PrivateRoute from './component/PrivateRoute/PrivateRoute';
 import Book from './component/Book/Book';
+import BookingEvent from './component/BookingEvent/BookingEvent';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route exact path='/home'>
             <Home />
+          </Route>
+          <Route path="/bookingEvent">
+            <BookingEvent />
           </Route>
           <Route path="/events">
             <ServiceEvent />

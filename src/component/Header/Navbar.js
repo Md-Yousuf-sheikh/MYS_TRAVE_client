@@ -32,6 +32,11 @@ const Navbar = ({ toggle }) => {
                         Event Manage
                     </Link>
                 }
+                {user.email &&
+                    <Link className="p-4 hover:text-blue-500" to="/bookingEvent">
+                        Booking Event
+                    </Link>
+                }
                 <Link className="p-4 hover:text-blue-500" to="/about">
                     About
                 </Link>
