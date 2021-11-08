@@ -1,5 +1,4 @@
 import React from 'react';
-import Event from '../Events/Event';
 import Events from '../Events/Events';
 import About from './About';
 import Banner from './Banner';

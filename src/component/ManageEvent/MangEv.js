@@ -3,17 +3,17 @@ import React from 'react';
 const MangEv = (props) => {
     const { name, img, price, _id } = props.item;
     const handelDeleteUser = id => {
-        const uri = `https://ghoulish-wizard-13656.herokuapp.com/events${id}`;
+        const uri = `https://ghoulish-wizard-13656.herokuapp.com/booking${id}`;
         fetch(uri, {
             method: 'DELETE',
 
         })
             .then(res => res.json())
             .then(data => {
-                if (data.deleteCount > 0) {
+                if (data.deletedCount > 1) {
                     alert('delete successfully')
-
                 }
+                console.log(data);
             })
     }
     return (

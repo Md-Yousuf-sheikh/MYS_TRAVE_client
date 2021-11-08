@@ -1,64 +1,42 @@
-import { useEffect, useState } from 'react';
-import { updateProfile, signInWithEmailAndPassword, onAuthStateChanged, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, getAuth, signOut } from "firebase/auth";
-import InitializeFirebase from '../Firebase/Firebase.Init';
+import { getAuth, signOut, GoogleAuthProvider, onAuthStateChanged, signInWithPopup } from "firebase/auth";
+import { useState, useEffect } from 'react';
+import InitializeFirebase from '../Firebase/Firebase.Init'
 
+
+// Initialize Firebase app
 InitializeFirebase()
 
+
 const useFirebase = () => {
-    const auth = getAuth();
-    const [user, setUser] = useState({});
+    const [user, setUser] = useState({})
     const [error, setError] = useState('');
-    const [isLoading, setIsLoading] = useState(true);
-    console.log(user);
-    // google pass
-    const sinInUsingGoogle = () => {
-        const googleProvider = new GoogleAuthProvider();
-        return signInWithPopup(auth, googleProvider)
-    };
-    // password gmail
-    const createUserWithEmail = (name, email, password) => {
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((result) => {
-                // Signed In
-                const user = result.user;
-                setUser(user);
-                updateName(name);
-            }).catch((error) => {
-                setError(error.message);
-            })
-            .finally(() => setIsLoading(false));
-    }
-    // email password account 
-    const signInWithEmailPassword = (email, password) => {
-        signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                const user = userCredential.user;
-                setUser(user);
-            })
-            .catch((error) => {
-                setError(error.message);
-            });
-    }
-    // Set User Name` 
-    const updateName = name => {
-        updateProfile(auth.currentUser, { displayName: name })
-            .then(result => { })
-    }
-    // Sin Out
-    const logOut = () => {
-        const auth = getAuth();
+    const [isLoading, setIsLoading] = useState(true)
+
+    // Auth call
+    const auth = getAuth();
+
+    // Google sing In 
+    const googleProvider = new GoogleAuthProvider();
+    const GoogleSinInUser = (location, history) => {
+        // set is loading
         setIsLoading(true)
-        signOut(auth).then(() => {
-            setUser({});
-        }).catch((error) => {
-            setError(error.message);
-
-        }).finally(() => setIsLoading(false))
+        signInWithPopup(auth, googleProvider)
+            .then((result) => {
+                // location state
+                const destination = location?.state?.from || '/';
+                history.replace(destination);
+                const user = result.user;
+                //  set user
+                setUser(user);
+            }).catch((error) => {
+                // set Error
+                setError(error.message);
+            }).finally(() => setIsLoading(false));
     }
 
-    // oneAuth state chang
+
     useEffect(() => {
-        const unsubscribed = onAuthStateChanged(auth, (user) => {
+        const unsubscribe = onAuthStateChanged(auth, user => {
             if (user) {
                 setUser(user)
             } else {
@@ -66,13 +44,28 @@ const useFirebase = () => {
             }
             setIsLoading(false)
         });
-        return () => unsubscribed;
+        return () => unsubscribe;
     }, [])
 
-    return {
-        user, createUserWithEmail, signInWithEmailPassword, setUser, setError, error, setIsLoading, logOut, sinInUsingGoogle, isLoading
+    // Sin Out User
+    const LogOut = () => {
+        signOut(auth).then(() => {
+            // Sign-out successful.
+            setUser({})
+        }).catch((error) => {
+            // An error happened.
+            setError(error.message)
+        }).finally(() => setIsLoading(false));
     }
 
+
+    return {
+        user,
+        error,
+        isLoading,
+        GoogleSinInUser,
+        LogOut
+    }
 };
 
 export default useFirebase;

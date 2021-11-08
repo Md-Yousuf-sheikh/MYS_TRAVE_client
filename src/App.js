@@ -11,6 +11,7 @@ import ServiceEvent from './component/ServiceEvent/ServiceEvent';
 import EventAdd from './component/EventAdd/EventAdd';
 import ManageEvent from './component/ManageEvent/ManageEvent';
 import PrivateRoute from './component/PrivateRoute/PrivateRoute';
+import Book from './component/Book/Book';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
           <Route path="/events">
             <ServiceEvent />
           </Route>
+          <PrivateRoute path="/book/:id">
+            <Book />
+          </PrivateRoute>
           <PrivateRoute path="/eventAdd">
             <EventAdd />
           </PrivateRoute>

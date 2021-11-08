@@ -4,7 +4,7 @@ import Event from './Event';
 const Events = () => {
     const [items, setItems] = useState([]);
     useEffect(() => {
-        fetch('https://ghoulish-wizard-13656.herokuapp.com/events')
+        fetch('http://localhost:5000/events')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])

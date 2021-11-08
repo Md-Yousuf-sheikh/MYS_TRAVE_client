@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import MangEv from './MangEv';
-
+// https://ghoulish-wizard-13656.herokuapp.com
 const ManageEvent = () => {
     const [items, setItems] = useState([]);
     useEffect(() => {
-        fetch('https://ghoulish-wizard-13656.herokuapp.com/events')
+        fetch('https://ghoulish-wizard-13656.herokuapp.com/booking')
             .then(res => res.json())
             .then(data => setItems(data))
-    }, [])
+    }, [items])
 
     return (
         <div>
