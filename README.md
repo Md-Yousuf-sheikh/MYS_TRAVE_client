@@ -6,94 +6,26 @@ This project was produce travel agency [MYS TRAVELLING].
 
 This website produce by MYS TRAVELLING.Traveling in Asia will help you to travel around the country.Enjoy the place of your choice with a worry-free and experienced guide.
 
-## How to maintain our team
-
-# We have some experienced tour guide they fixed tour map.
-
-# They are always ready best transport.
-
-# This website to easy your tour plan.You book your fav place.
-
-# They complete your mission to easy.
-
-# This website produce most famous location in Asia
-
+### How to maintain our team
+➢This is a travel agency website. From here you can book the place of your choice.
+➢ If you are a user you can book the place of your choice and cancel it.
+➢ If you are an admin, you can add a new place and you can delete, you can add a new
+admin.
+➢We have some experienced tour guide they fixed tour map.
+➢They are always ready best transport.
+➢This website to easy your tour plan.You book your fav place.
+➢They complete your mission to easy.
+➢This website produce most famous location in Asia
 
 
-
-# Live web sit link
+#### Live web sit link
 https://travel-mys.web.app/
 
-# Clint side Link 
+#### Clint side Link 
 https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-Md-Yousuf-sheikh
 
-#  Server side link
+####  Server side link
 
 https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-Md-Yousuf-sheikh
 
 
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
